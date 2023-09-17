@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://cbd4injm0nmjr"]
+
+[ext_resource type="Material" uid="uid://c7c5ptsfdg25v" path="res://Materials/face_material_3d.tres" id="1_eodv5"]
+[ext_resource type="Material" uid="uid://bho6rxq88wgdv" path="res://Materials/cloth_material_3d.tres" id="2_ee2hw"]
+[ext_resource type="Material" uid="uid://4mkhmuy5uaek" path="res://Materials/skin_material_3d.tres" id="3_0ao4p"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_huvci"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_itmcw"]
+
+[node name="Player" type="Node3D"]
+
+[node name="Head" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_eodv5")
+mesh = SubResource("BoxMesh_huvci")
+skeleton = NodePath("")
+
+[node name="Body" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.701579, 0, 0, 0, 1, 0, 0, 0, 0.564292, 0, -0.991359, 0)
+material_override = ExtResource("2_ee2hw")
+mesh = SubResource("BoxMesh_itmcw")
+skeleton = NodePath("")
+
+[node name="LeftArm" type="MeshInstance3D" parent="."]
+transform = Transform3D(-9.2001e-09, 1, 0, -0.210474, -4.37114e-08, 0, 0, 0, 0.188838, -0.834613, -0.736635, 0)
+material_override = ExtResource("3_0ao4p")
+mesh = SubResource("BoxMesh_itmcw")
+skeleton = NodePath("")
+
+[node name="RightArm" type="MeshInstance3D" parent="."]
+transform = Transform3D(-9.2001e-09, 1, 0, -0.210474, -4.37114e-08, 0, 0, 0, 0.188838, 0.798333, -0.736635, 0)
+material_override = ExtResource("3_0ao4p")
+mesh = SubResource("BoxMesh_itmcw")
+skeleton = NodePath("")
+
+[node name="LeftLeg" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.210474, 0, 0, 8.88178e-16, 1, 0, 0, 0, 0.188838, -0.182712, -1.96924, 0)
+material_override = ExtResource("3_0ao4p")
+mesh = SubResource("BoxMesh_itmcw")
+skeleton = NodePath("")
+
+[node name="RightLeg" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.210474, 0, 0, 8.88178e-16, 1, 0, 0, 0, 0.188838, 0.183501, -1.96924, 0)
+material_override = ExtResource("3_0ao4p")
+mesh = SubResource("BoxMesh_itmcw")
+skeleton = NodePath("")
