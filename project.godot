@@ -14,3 +14,8 @@ config/name="IntroToGodot"
 run/main_scene="res://test_2d_scene.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
